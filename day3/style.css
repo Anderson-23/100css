@@ -1,0 +1,121 @@
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+.corpo{
+
+    display: flex;
+    border-radius: 25px;
+    background-color: #ffff;
+    border: 1px solid white;
+    box-shadow: 5px 5px 5px black;
+    width: 500px;
+    height: 500px;
+    justify-content: space-between;
+    overflow: hidden;
+
+}
+
+.ladoD{
+padding-top: 50px;
+padding-bottom: 50px;
+background-color: aqua;
+display: flex;
+flex-direction: column;
+align-items: center;
+width: 250px;
+justify-content: space-between;
+}
+.ladoD h1{
+
+font-size: 20px;
+
+}
+.ladoD p{
+
+text-align: center;
+font-size: 13px;
+
+}
+#nome{
+
+display: flex;
+flex-direction: column;
+justify-content: center;
+
+}
+
+.imagem{
+
+display: flex;
+justify-content: center;
+align-items: center;
+width: 150px;
+height: 150px;
+
+}
+.imagem:hover  span::before{
+
+    transform: rotate(1turn);
+
+
+}
+.imagem:hover  span::after{
+
+    transform: rotate(-1turn);
+
+
+}
+
+div span{
+    background-image: url(imagem/yose100.jpeg);
+    display: block;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: relative;
+ 
+}
+div span::before{
+    content: '';
+    display: block;
+    width: 115px;
+    height: 115px;
+    border-radius: 50%;
+    top: -10%;
+    left: -11%;
+    position: absolute;
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
+    border-left: 3px solid white;
+    border-right: 3px solid black;
+    transition: transform 1.5s ease-in-out;
+ 
+}
+div span::after{
+    content: '';
+    display: block;
+    width: 105px;
+    height: 105px;
+    border-radius: 50%;
+    position: absolute;
+    top: -5%;
+    left: -5%;
+    transition: transform 1.5s ease-in-out;
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
+    border-left: 3px solid black;
+    border-right: 3px solid white;
+   
+
+}

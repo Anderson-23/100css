@@ -1,0 +1,78 @@
+body{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: white;
+}
+
+div.principal{
+
+    width: 300px;
+    height: 300px;
+    background-image:radial-gradient(
+    circle at 33% 100%,    
+    #fed373 4%,
+    #f15245 30%,
+    #d92e7f 60%,
+    #9b36b7 85%,
+    #515ecf
+    );
+    position: relative;
+    border-radius: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 5px 5px 5px black;
+}
+.centro{
+
+    position: relative;
+    width: 175px;
+    height: 175px;
+    background-color: transparent;
+    border-radius: 65px;
+    border: 25px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.meio{
+
+    width: 70px;
+    height: 70px;
+    background-color: transparent;
+    border-radius: 50%;
+    border: 25px solid white;
+    border-top: 25px solid #fed373 ;
+    border-bottom: 25px solid #f15245 ;
+    border-left: 25px solid #9b36b7 ;
+    border-right: 25px solid #515ecf ;
+    animation: animacao 2s infinite linear;
+
+}
+.bolinha{
+
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color:white;
+    border-radius: 50%;
+    top:15px;
+    right:15px;
+}
+
+@keyframes animacao{
+
+    to{
+
+        transform: rotate(1turn);
+
+
+
+    }
+
+
+}

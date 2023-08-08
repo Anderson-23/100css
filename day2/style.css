@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+:root{
+
+    --bezier: cubic-bezier(.21,.98,.6,.99);
+}
+body{
+
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+div{
+
+    width: 300px;
+    height: 300px;
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+div span{
+    display: block;
+    width: 200px;
+    height: 200px;
+    background-color: #ff0000;
+    border-radius: 50%;
+    position: relative;
+    animation-fill-mode: both;
+    animation: animacao3 2s var(--bezier) infinite alternate ;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px,
+    rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px,
+    rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+}
+div span::before{
+    content: '';
+    display: block;
+    width: 150px;
+    height: 150px;
+    background-color: ff0000;
+    border-radius: 50%;
+    top: 13%;
+    left: 12%;
+    position: absolute;
+    animation-fill-mode: both;
+    animation: animacao2 2s var(--bezier) infinite alternate ;    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px,
+    rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px,
+    rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+}
+div span::after{
+    content: '';
+    display: block;
+    width: 70px;
+    height: 70px;
+    background-color:ff0000;
+    border-radius: 50%;
+    position: absolute;
+    top: 32%;
+    left: 32%;
+    animation-fill-mode: both;
+    animation: animacao 2s var(--bezier) infinite alternate ;    
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px,
+    rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px,
+    rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+}
+
+@keyframes animacao3 {
+    
+    0%,10%{
+
+       transform: scale(0);
+    }
+
+    100%{
+
+        transform: scale(1);
+    }
+
+
+}
+@keyframes animacao2 {
+    
+    0%,40%{
+
+        transform: scale(0);
+    }
+  
+    100%{
+
+        transform: scale(1);
+    }
+
+
+}
+@keyframes animacao {
+    
+    0%,70%{
+
+        transform: scale(0);
+    }
+ 
+    100%{
+
+        transform: scale(1);
+    }
+
+
+}
