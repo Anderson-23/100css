@@ -1,0 +1,249 @@
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+
+    font-family: 'Times New Roman', Times, serif;
+    letter-spacing: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.principal{
+
+    background-color: white;
+    border: 1px solid black;
+    height: 320px;
+
+}
+
+.cabeca{
+
+    display: flex;
+    background-color: #5F98CD;
+    width: 300px;
+    height: 50px;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.cabeca h1{
+
+font-size: 16px;
+color: white;
+
+}
+.menu{
+
+    width: 24px;
+    height: 17px;
+    position: relative;
+    cursor: pointer;
+}
+.menu:hover #menu{
+
+    background-color: white;
+}
+.menu:hover #menu::after{
+
+    background-color: white;
+}
+.menu:hover #menu::before{
+
+    background-color: white;
+}
+
+#menu{
+    content: '';
+    width: 12px;
+    height: 3px;
+    background-color: aqua;
+    position: absolute;
+    top: 20%;
+    left: 7%;
+    transition: background-color 300ms;
+    
+}
+
+#menu::before {
+    content: '';
+    width: 20px;
+    height: 3px;
+    background-color: aqua;
+    position: absolute;
+    top: 268%;
+    height: 4px;
+    transition: background-color 300ms;
+}
+
+#menu::after {
+    content: '';
+    width: 6.5px;
+    height: 6.5px;
+    background-color: aqua;
+    position: absolute;
+    left: 114%;
+    top: -55%;
+    border-radius: 50%;
+    transition: background-color 300ms;
+}
+
+.pesquisa {
+
+    width: 24px;
+    position: relative;
+    height: 21px;
+
+    &:hover{
+
+        cursor: pointer;
+    }
+}
+.pesquisa:hover #pesquisa{
+
+    border: 3px solid white;
+
+
+}
+.pesquisa:hover #pesquisa::before{
+
+   background-color: white;
+
+
+}
+#pesquisa{
+
+    content: '';
+    width:15px;
+    height:15px;
+    border-radius: 50%;
+    border: 3px solid aqua;
+    position: absolute; 
+    transition: border-color 300ms;
+
+
+
+}
+#pesquisa::before{
+
+    content:'';
+    width: 14px;
+    height: 4px;
+    background-color: aqua;
+    position: absolute;
+    bottom: -56%;
+    left: 70%;
+    transform: rotatez(45deg);
+    transition: background-color 300ms;
+
+}
+.corpo{
+    
+    
+    background-color: #1200b1;
+    height: 100%;
+
+
+}
+.linha{
+
+    content: '';
+    width: 3px;
+    height: 267px;
+    background-color: #1200b1;
+    position: absolute;
+    top: 12.3%;
+    left: 20%;
+ 
+
+}
+.corpo p{
+
+   font-size: 12px;
+
+}
+.corpo div{
+
+    margin-left: 60px;
+    margin-top: 25px;
+    position: relative;
+
+}
+.corpo div .data {
+    content: '';
+    width: 22px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: white;
+    position: absolute;
+    top: 3px;
+    left: -27.2px;
+    z-index: 2;
+}
+
+.corpo div .data::after {
+    content: '';
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    border: 3px solid #5F98CD;
+    background-color: white;
+    position: absolute;
+    top: 4px;
+    left: 12%;
+}
+.corpo div .data2 {
+    content: '';
+    width: 22px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: white;
+    position: absolute;
+    top: 3px;
+    left: -27.2px;
+    z-index: 2;
+}
+
+.corpo div .data2::after {
+    content: '';
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    border: 3px solid #5F98CD;
+    background-color: white;
+    position: absolute;
+    top: 4px;
+    left: 12%;
+}
+.corpo div .data3 {
+    content: '';
+    width: 22px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: white;
+    position: absolute;
+    top: 3px;
+    left: -27.2px;
+    z-index: 2;
+}
+
+.corpo div .data3::after {
+    content: '';
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    border: 3px solid #5F98CD;
+    background-color: white;
+    position: absolute;
+    top: 4px;
+    left: 12%;
+}
+
+
