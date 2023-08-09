@@ -9,6 +9,11 @@
 body{
 
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #2f2ffc;
+    height: 100vh;
 
 }
 
@@ -26,58 +31,34 @@ body{
 
 }
 
-.ladoD{
-padding-top: 50px;
-padding-bottom: 50px;
+/* lado D */
 
-display: flex;
-flex-direction: column;
-align-items: center;
-width: 300px;
-justify-content: space-between;
+.ladoD{
+
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    justify-content: space-between;
+
 }
 .ladoD h1{
 
-font-size: 20px;
+    font-size: 20px;
 
 }
 .ladoD p{
 
-text-align: center;
-font-size: 13px;
-
-}
-#nome{
-
-display: flex;
-flex-direction: column;
-justify-content: center;
+    text-align: center;
+    font-size: 13px;
 
 }
 
-.imagem{
-
-display: flex;
-justify-content: center;
-align-items: center;
-width: 150px;
-height: 150px;
-
-}
-.imagem:hover  span::before{
-
-    transform: rotate(1turn);
-
-
-}
-.imagem:hover  span::after{
-
-    transform: rotate(-1turn);
-
-
-}
 
 div span{
+
     background-image: url(imagem/yose100.jpeg);
     display: block;
     width: 100px;
@@ -87,6 +68,7 @@ div span{
  
 }
 div span::before{
+
     content: '';
     display: block;
     width: 115px;
@@ -103,6 +85,7 @@ div span::before{
  
 }
 div span::after{
+
     content: '';
     display: block;
     width: 105px;
@@ -119,46 +102,74 @@ div span::after{
    
 
 }
+.imagem{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 150px;
+
+}
+.imagem:hover  span::before{
+
+    transform: rotate(1turn);
+
+}
+.imagem:hover  span::after{
+
+    transform: rotate(-1turn);
+
+}
+
+#nome{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+/* lado E */
 
 .links a{
-display: flex;
-text-decoration: none;
-background-color: blue;
-width: 120px;
-justify-content: center;
-margin-top:15px ;
-padding: 5px;
-border-radius: 25px;
-color: #ffff;
-transition: background-color 500ms;
 
-&:hover{
+    display: flex;
+    text-decoration: none;
+    background-color: blue;
+    width: 120px;
+    justify-content: center;
+    margin-top:15px ;
+    padding: 5px;
+    border-radius: 25px;
+    color: #ffff;
+    transition: background-color 500ms;
+
+    &:hover{
 
 
-    background-color: #2f2ffc;
-}
+        background-color: #2f2ffc;
+    }
 }
 
 
 .ladoE div{
 
-background-color: aqua;
-width: 195px;
-height: 130px;
-margin-top: 2px;
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-transition: background-color 200ms;
+    background-color: aqua;
+    width: 195px;
+    height: 130px;
+    margin-top: 2px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 200ms;
 
-&:hover{
+    &:hover{
 
-cursor: pointer;
-background-color: rgb(0, 162, 255);
+    cursor: pointer;
+    background-color: rgb(0, 162, 255);
 
-
-}
-
+    }
 
 }
