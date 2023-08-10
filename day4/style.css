@@ -13,15 +13,31 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-
+    height: 100vh;
+    overflow: hidden;
 }
 
-.principal{
+.submenu{
 
+background-color: aqua;
+height: 260px;
+position: absolute;
+z-index: auto;
+top: 0;
+left: 0;
+}
+
+
+
+
+.principal{
+    position: relative;
     background-color: white;
     border: 1px solid black;
     height: 320px;
-
+    overflow: hidden;
+    transition: transform 800ms;
+    z-index: 1;
 }
 
 .cabeca{
@@ -46,6 +62,11 @@ color: white;
     height: 17px;
     position: relative;
     cursor: pointer;
+}
+.mexer{
+
+transform: translateX(200px);
+
 }
 .menu:hover #menu{
 
@@ -146,36 +167,54 @@ color: white;
 }
 .corpo{
     
-    
-    background-color: #1200b1;
-    height: 100%;
-
+    position: relative;
+    z-index: 1;
 
 }
 .linha{
 
-    content: '';
-    width: 3px;
-    height: 267px;
-    background-color: #1200b1;
     position: absolute;
-    top: 12.3%;
-    left: 20%;
- 
-
+    width: 4px;
+    height: 268px;
+    background-color: aqua;
+    top: -25px;
+    left: 40px;
 }
 .corpo p{
 
    font-size: 12px;
 
 }
-.corpo div{
+.corpo .datas{
 
     margin-left: 60px;
     margin-top: 25px;
     position: relative;
-
+    z-index: 1;
 }
+@keyframes datasanimation {
+	from {
+		transform: translate3d(0px,200px,0px);
+		opacity: 0;
+	}
+	to {
+		transform: translate3d(0,0,0);
+		opacity: 1;
+	}
+}
+
+.datas1 {
+    animation: datasanimation 1s ease-in-out backwards;
+    
+}
+.datas2 {
+    animation: datasanimation 1s ease-in-out .5s backwards;
+}
+.datas3 {
+    animation: datasanimation 1s ease-in-out 1s backwards;
+}
+
+
 .corpo div .data {
     content: '';
     width: 22px;
@@ -184,9 +223,10 @@ color: white;
     background-color: white;
     position: absolute;
     top: 3px;
-    left: -27.2px;
-    z-index: 2;
+    left: -28px;
+
 }
+
 
 .corpo div .data::after {
     content: '';
@@ -196,8 +236,8 @@ color: white;
     border: 3px solid #5F98CD;
     background-color: white;
     position: absolute;
-    top: 4px;
-    left: 12%;
+    top: 5px;
+    left: 13%;
 }
 .corpo div .data2 {
     content: '';
@@ -207,8 +247,8 @@ color: white;
     background-color: white;
     position: absolute;
     top: 3px;
-    left: -27.2px;
-    z-index: 2;
+    left: -28px;
+
 }
 
 .corpo div .data2::after {
@@ -219,7 +259,7 @@ color: white;
     border: 3px solid #5F98CD;
     background-color: white;
     position: absolute;
-    top: 4px;
+    top: 5px;
     left: 12%;
 }
 .corpo div .data3 {
@@ -230,8 +270,8 @@ color: white;
     background-color: white;
     position: absolute;
     top: 3px;
-    left: -27.2px;
-    z-index: 2;
+    left: -28px;
+
 }
 
 .corpo div .data3::after {
@@ -242,8 +282,18 @@ color: white;
     border: 3px solid #5F98CD;
     background-color: white;
     position: absolute;
-    top: 4px;
+    top: 5px;
     left: 12%;
+ 
 }
 
+@keyframes datas {
 
+    to{.corpo .datas{
+
+        transform: translatez(120px);
+    
+    }
+    
+}
+}
