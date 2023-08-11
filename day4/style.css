@@ -19,16 +19,65 @@ body{
 
 .submenu{
 
+background-color: #43627D;
+width: 230px;
+height: 250px;
+position: absolute;
+transform: translateX(-15px);
+transition: transform 800ms;
+display: flex;
+justify-content: center;
+align-items: center;
+border-radius: 5px;
+overflow: hidden;
+}
+.submenu nav {
+
+width: 100%;
+
+
+}
+.submenu nav ul {
+
+    display: flex;
+    flex-direction: column;
+    height: 250px;
+    
+    
+}
+.submenu nav ul li {
+
+  list-style: none;
+}
+.submenu nav ul li a{
+
+  text-decoration: none;
+  width: 200px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  text-indent: 30px;  
+  color: white;
+  &:hover{
+   
+    background-color: #2e4456;
+   
+
+  }
+
+}
+
 
 
 .principal{
-    position: relative;
+    position: absolute;
     background-color: white;
     border: 1px solid black;
+    border-radius: 5px;
     height: 320px;
     overflow: hidden;
     transition: transform 800ms;
-    z-index: 1;
+
 }
 
 .cabeca{
@@ -56,9 +105,15 @@ color: white;
 }
 .mexer{
 
-transform: translateX(200px);
+transform: translateX(150px);
 
 }
+.mexer2{
+
+transform: translateX(-60px);
+
+}
+
 .menu:hover #menu{
 
     background-color: white;
